@@ -18,3 +18,10 @@
 #### b. Keep variables from dataset
 #### c. dropping variables from dataset
 #### d. slicing set of observation
+
+## Chapter 3. Getting Data into SAS
+
+### This chapter contains data import as well as data export techniques to and from SAS into other file formats
+
+#### a. Data import from text, csv and xlsx files into SAS 
+#### b. Data export from SAS to text, csv and xlsx files
