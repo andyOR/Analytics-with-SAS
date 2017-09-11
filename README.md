@@ -25,3 +25,4 @@
 
 #### a. Data import from text, csv and xlsx files into SAS 
 #### b. Data export from SAS to text, csv and xlsx files
+#### c. Data mining with conditional operators
