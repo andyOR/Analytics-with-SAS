@@ -120,4 +120,10 @@ set Sashelp.Cars;
 where Make = 'Audi' and Type = 'Sports' and Horsepower > 400;
 run;
 
+
+data SAS.CarsUnique2;
+set Sashelp.Cars;
+where Make = 'Audi' and Cylinders^=6;
+run;
+
 end
