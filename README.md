@@ -26,3 +26,9 @@
 #### a. Data import from text, csv and xlsx files into SAS 
 #### b. Data export from SAS to text, csv and xlsx files
 #### c. Data mining with conditional operators
+
+## Chapter 4. Data Partition
+
+### This chapter contain data splitting techniques from the mother dataset to gain insights into data
+
+
