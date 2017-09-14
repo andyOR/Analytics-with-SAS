@@ -29,6 +29,6 @@
 
 ## Chapter 4. Data Partition
 
-### This chapter contain data splitting techniques from the mother dataset to gain insights into data
+### This chapter contain data splitting techniques from the mother dataset to gain insights into data. Data splitting helps in structural analysis of the data by filering on conditions and printing the results into better formats
 
 
