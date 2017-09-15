@@ -21,8 +21,15 @@ run;
 
 
 /*Finding mean*/
-proc means data=SAS.Fish_arrays;
+proc means data=SAS.Fish_arrays maxdec=2;
 var Length1 Height Width Weight;
 run;
+
+/*By keyword for species classification*/
+proc means data=SAS.Fish_arrays maxdec=2;
+var Length1 Height Width Weight;
+class Species;
+run;
+
 
 
