@@ -38,3 +38,37 @@ class Species;
 run;
 
 
+/*Saving proc operations-no print statement*/
+proc means data=SAS.Fish_arrays noprint;
+var Length1 Height Width Weight;
+class Species;
+output out=SAS.Fish_Class;
+run;
+
+
+/*Finding missing data variable*/
+proc means data=SAS.Fish_arrays nmiss;
+run;
+
+
+/*Sum function in procs*/
+proc means data=SAS.Fish_arrays maxdec=2;
+var Length1 Height Width Weight;
+class Species;
+output out=SAS.Fish_sumClass sum=total_species;
+run;
+
+/*Proc tabular form*/
+proc tabulate data=SAS.Fish_arrays;
+var Length1 Height Width Weight;
+class Species;
+table Species all,mean *(Length1 Height Width Weight) std*(Length1 Height Width Weight) sum*(Length1 Height Width Weight);
+run;
+
+/*Box Misstext*/
+proc tabulate data=SAS.Fish_arrays;
+var Length1 Height Width Weight;
+class Species;
+table Species all,mean *(Length1 Height Width Weight) std*(Length1 Height Width Weight) sum*(Length1 Height Width Weight)/
+BOX='Mean & Std & SUM' misstext='No value';
+run;
