@@ -72,3 +72,6 @@ class Species;
 table Species all,mean *(Length1 Height Width Weight) std*(Length1 Height Width Weight) sum*(Length1 Height Width Weight)/
 BOX='Mean & Std & SUM' misstext='No value';
 run;
+
+
+END
