@@ -28,8 +28,13 @@ run;
 /*By keyword for species classification*/
 proc means data=SAS.Fish_arrays maxdec=2;
 var Length1 Height Width Weight;
-class Species;
+by Species;
 run;
 
+/*Class keyword for matrix output*/
+proc means data=SAS.Fish_arrays maxdec=2;
+var Length1 Height Width Weight;
+class Species;
+run;
 
 
