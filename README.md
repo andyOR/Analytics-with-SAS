@@ -38,9 +38,13 @@
 
 ## Chapter 5. Proc Statements and Operations
 
-### This chapter deals with the proc statements used for data operation in SAS. Data operations such as mean, standard deviation, sum, etc are possible with proc statements. 
+### This chapter deals with the proc statements used for data operation in SAS. Data operations such as mean, standard deviation, sum, etc are possible with proc statements. It also contains operations of proc frequency, proc formats, and proc reports.
 
 #### a. Proc means, std dev. or data summary
 #### b. Save results from proc statements
 #### c. Missing data information
 #### d. Tabular forms in SAS
+
+## Chapter 6. Proc Statements and Operations II
+
+### This chapter deals with proc appends, proc merge, and proc SQL.
