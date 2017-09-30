@@ -47,8 +47,13 @@
 
 ## Chapter 6. Proc Statements and Operations II
 
-### This chapter deals with proc appends, proc merge, and proc SQL. Proc SQL helps for data processing from remote server using SAS environment
+### This chapter deals with proc appends, proc merge, proc formt and Proc report. 
 
 ### a. Proc Append for joining datasets
 ### b. Proc merge for merging datasets
-### c. Proc SQL 
+### c. Proc format 
+### d. Proc report
+
+## Chapter 7. Advanced SAS - Proc SQL
+
+### Proc SQL helps for data processing from remote server using SAS environment.
