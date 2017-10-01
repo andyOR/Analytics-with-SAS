@@ -111,3 +111,12 @@ select Product,Region, sum(Stores) as New_stores
 from Sashelp.shoes
 group by Product, Region;
 quit;
+
+
+/*Update Keyword*/
+proc sql;
+create table SAS.Class_update as
+select * from Sashelp.class;
+update SAS.Class_update
+set Height=Height+10 where Sex='M';
+quit;
