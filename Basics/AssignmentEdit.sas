@@ -132,9 +132,9 @@ run;
 proc means data=Junkfood1 maxdec=2 noprint;
 var Price;
 by Type;
-output out=SAS.SUM_totprice (drop=_Type_ _Freq_)sum=SUM;
+output out=SUM_totprice (drop=_Type_ _Freq_)sum=SUM;
 run;
-proc sort data=SAS.SUM_totprice;
+proc sort data=SUM_totprice;
 by descending Sum;
 run;
 
@@ -143,7 +143,7 @@ table Type * Price;
 run;
 /*Question 2*/
 proc freq data=Junkfood;
-table Type;
+table Type /list;
 run;
 
 /*Question 3*/
@@ -188,4 +188,9 @@ proc tabulate data=JunkFood;
 var Sodium Calcium Price;
 class Type;
 table Type all, sum*(Sodium Calcium Price);
+run;
+
+/*Questions 6*/
+proc report data=Junkfood;
+where Vit_A ^=0 and Vit_C ^=0;
 run;
