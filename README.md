@@ -57,3 +57,6 @@
 ## Chapter 7. Advanced SAS - Proc SQL
 
 ### Proc SQL helps for data processing from remote server using SAS environment.
+
+#### Getting data through sql
+#### Data operation in SQL
