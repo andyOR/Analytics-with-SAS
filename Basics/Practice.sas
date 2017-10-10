@@ -194,3 +194,66 @@ run;
 proc report data=Junkfood;
 where Vit_A ^=0 and Vit_C ^=0;
 run;
+
+
+/*Assignment 6*/
+
+/*Question 1*/
+proc sql;
+select Type, Price, sum(Price) as Sum
+from Junkfood
+group by Type
+order by Sum desc;
+quit;
+
+/*Question 2*/
+proc sql;
+select * from Junkfood
+where Price between 1.20 and 2.22;
+quit;
+
+
+/*Question 3*/
+proc sql;
+create table PQR as
+select * from Junkfood;
+update PQR
+set weight=weight+5,calories=calories-100 where Type = 'Hamburger'
+;
+quit;
+
+/*Question 4*/
+proc sql;
+select jobcat, max(salary) as Max
+from employee_new
+group by jobcat
+order by jobcat desc;
+quit;
+
+
+/*Question 5*/
+
+data employee_new_1;
+set employee_new (rename=salary=new);
+salary=input(new,dollar11.);
+run;
+
+data employee_new_2;
+set employee_new_1 (rename=salary=new1);
+salary=input(new1,12.);
+drop new new1;
+run;
+/*question a*/
+
+proc sql;
+select salary, jobcat, salary/jobtime as salary_per_hour
+from employee_new_2;
+quit;
+
+/*question b*/
+proc sql;
+select salary, jobcat, gender,salary/jobtime as salary_per_hour
+from employee_new_2
+group by gender;
+quit;
+
