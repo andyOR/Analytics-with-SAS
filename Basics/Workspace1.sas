@@ -1,4 +1,4 @@
-libname SAS 'C:\2017\Work\SAS\SAS_Workshop';
+libname SAS 'C:\2017\Work\Wireclass\SAS_Workshop';
 
 /*Create a dataset*/
 data SAS.Firstdata;length City$10.;
@@ -27,4 +27,26 @@ Notting Hill  Romantic
 run;
 
 proc print data=SAS.Movies;
-run
+run;
+
+/*Reading other format file*/
+data SAS.TexttoSas;
+infile 'C:\2017\Work\Wireclass\SAS_Workshop\Text1.txt';
+length State$15. Region$20.;
+Input State$ Region$ Area;
+run;
+
+
+/*Reading text file with observation on multiple lines*/
+data SAS.Text2toSas;
+infile 'C:\2017\Work\Wireclass\SAS_Workshop\Text2.txt';
+length State$15. Region$20.;
+Input State$ Region$ / Area #3 Population;
+run;
+
+
+
+
+
+
+
