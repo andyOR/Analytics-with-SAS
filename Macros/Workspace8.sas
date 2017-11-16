@@ -31,3 +31,12 @@ run;
 %mend;
 
 %s(SAS.States, SortStates, State);
+
+/*Macros - Assigning variables*/
+%let X=SAS.Carsunique;
+%let Y=Make;
+%let Z=Mercedes-Benz;
+
+proc print data=&X;
+where &Y="&Z";
+run;
